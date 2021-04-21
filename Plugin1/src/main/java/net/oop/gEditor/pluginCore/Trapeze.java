@@ -4,9 +4,10 @@ import net.oop.gEditor.uicore.Shapes.Shape;
 import net.oop.gEditor.uicore.WorkPanel.Panel;
 
 import java.awt.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Trapeze extends Shape {
+public class Trapeze extends Shape implements Serializable {
     private int x1;
     private int y1;
     private int x2;
