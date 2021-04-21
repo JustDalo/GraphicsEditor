@@ -1,5 +1,7 @@
 package net.oop.gEditor.uicore.UI;
 
+import net.oop.gEditor.uicore.Serialization.OpenFile;
+import net.oop.gEditor.uicore.Serialization.SaveAsFile;
 import net.oop.gEditor.uicore.Shapes.Shape;
 import net.oop.gEditor.uicore.WorkPanel.Panel;
 
@@ -15,8 +17,8 @@ public class MenuBar extends JMenuBar {
         JMenu editMenu = new JMenu("Editing");
         this.add(editMenu);
 
-       // new OpenFile(fileMenu, panel);
-       // new SaveAsFile(fileMenu, panel);
+        new OpenFile(fileMenu, panel);
+        new SaveAsFile(fileMenu, panel);
 
         editBtn(editMenu, panel);
 

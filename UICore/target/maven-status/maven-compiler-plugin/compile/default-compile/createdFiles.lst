@@ -1,7 +1,9 @@
 net\oop\gEditor\uicore\Shapes\Rectangle.class
 net\oop\gEditor\uicore\UI\ColorBar$ColorDialog.class
+net\oop\gEditor\uicore\Serialization\OpenFile.class
 net\oop\gEditor\uicore\UI\MenuBar.class
 net\oop\gEditor\uicore\Mouse\Mouse$1.class
+net\oop\gEditor\uicore\Serialization\SaveAsFile$1$1.class
 net\oop\gEditor\uicore\Shapes\Oval.class
 net\oop\gEditor\uicore\UI\ColorBar$3.class
 net\oop\gEditor\uicore\ShapeFactory\BrokenLineFactory.class
@@ -22,9 +24,12 @@ net\oop\gEditor\uicore\UndoRedo\UndoRedo.class
 net\oop\gEditor\uicore\ShapeFactory\OvalFactory.class
 net\oop\gEditor\uicore\UI\ColorBar$4.class
 net\oop\gEditor\uicore\ShapeFactory\RectangleFactory.class
+net\oop\gEditor\uicore\Serialization\OpenFile$1.class
 net\oop\gEditor\uicore\UI\ColorBar.class
 net\oop\gEditor\uicore\Window\Start.class
+net\oop\gEditor\uicore\Serialization\SaveAsFile.class
 net\oop\gEditor\uicore\UI\ColorBar$2.class
+net\oop\gEditor\uicore\Serialization\OpenFile$1$1.class
 net\oop\gEditor\uicore\UI\ToolBar.class
 net\oop\gEditor\uicore\UndoRedo\UndoRedo$2.class
 net\oop\gEditor\uicore\ShapeFactory\LineFactory.class
@@ -34,5 +39,6 @@ net\oop\gEditor\uicore\Mouse\Mouse.class
 net\oop\gEditor\uicore\WorkPanel\Panel.class
 net\oop\gEditor\uicore\Window\Start$1.class
 net\oop\gEditor\uicore\Mouse\Mouse$2.class
+net\oop\gEditor\uicore\Serialization\SaveAsFile$1.class
 net\oop\gEditor\uicore\UI\ColorBar$5.class
 net\oop\gEditor\uicore\UI\MenuBar$1.class

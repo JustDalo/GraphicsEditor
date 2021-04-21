@@ -8,6 +8,8 @@ C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\ShapeFactory\LineF
 C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\ShapeFactory\BrokenLineFactory.java
 C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\UI\MenuBar.java
 C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\ShapeFactory\PolygonFactory.java
+C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\Serialization\OpenFile.java
+C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\Serialization\SaveAsFile.java
 C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\UI\ToolBar.java
 C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\Shapes\Shape.java
 C:\GraphicsEditor\UICore\src\main\java\net\oop\gEditor\uicore\WorkPanel\Panel.java
