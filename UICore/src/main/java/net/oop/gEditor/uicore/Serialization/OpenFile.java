@@ -37,12 +37,12 @@ public class OpenFile {
                     int result = jf.showOpenDialog(null);
                     if (result == JFileChooser.APPROVE_OPTION) {
                         String fileName = jf.getSelectedFile().getAbsolutePath();
-                        File iF = new File(fileName);
 
                         FileInputStream fis = new FileInputStream(fileName);
                         ObjectInputStream ois = new ObjectInputStream(fis);
 
                         panel.shapes = (ArrayList) ois.readObject();
+                        panel.removedShapes.clear();
                         panel.repaint();
 
                         ois.close();

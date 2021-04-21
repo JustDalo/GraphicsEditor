@@ -36,7 +36,6 @@ public class SaveAsFile {
                     int result = jf.showSaveDialog(null);
                     if (result == JFileChooser.APPROVE_OPTION) {
                         String fileName = jf.getSelectedFile().getAbsolutePath();
-                        File iF = new File(fileName);
                         FileOutputStream out = new FileOutputStream(fileName + ".json");
                         ObjectOutputStream oos = new ObjectOutputStream(out);
                         oos.writeObject(panel.shapes);
