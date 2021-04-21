@@ -16,7 +16,9 @@ net\oop\gEditor\uicore\UI\ColorBar$6.class
 net\oop\gEditor\uicore\UI\ToolBar$1.class
 net\oop\gEditor\uicore\ShapeFactory\ShapeFactory.class
 net\oop\gEditor\uicore\UI\MenuBar$2.class
+net\oop\gEditor\uicore\UndoRedo\UndoRedo$1.class
 net\oop\gEditor\uicore\Shapes\Line.class
+net\oop\gEditor\uicore\UndoRedo\UndoRedo.class
 net\oop\gEditor\uicore\ShapeFactory\OvalFactory.class
 net\oop\gEditor\uicore\UI\ColorBar$4.class
 net\oop\gEditor\uicore\ShapeFactory\RectangleFactory.class
@@ -24,6 +26,7 @@ net\oop\gEditor\uicore\UI\ColorBar.class
 net\oop\gEditor\uicore\Window\Start.class
 net\oop\gEditor\uicore\UI\ColorBar$2.class
 net\oop\gEditor\uicore\UI\ToolBar.class
+net\oop\gEditor\uicore\UndoRedo\UndoRedo$2.class
 net\oop\gEditor\uicore\ShapeFactory\LineFactory.class
 net\oop\gEditor\uicore\Shapes\Polygon.class
 net\oop\gEditor\uicore\WorkPanel\Board.class

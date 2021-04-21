@@ -4,6 +4,7 @@ import net.oop.gEditor.uicore.Mouse.Mouse;
 import net.oop.gEditor.uicore.UI.ColorBar;
 import net.oop.gEditor.uicore.UI.MenuBar;
 import net.oop.gEditor.uicore.UI.ToolBar;
+import net.oop.gEditor.uicore.UndoRedo.UndoRedo;
 import net.oop.gEditor.uicore.WorkPanel.Board;
 import net.oop.gEditor.uicore.WorkPanel.Panel;
 
@@ -27,6 +28,7 @@ public class Start {
                 myFrame.add(new ColorBar(myFrame, myPanel));
                 myFrame.add(myPanel);
                 myFrame.add(new ToolBar(myMouse));
+                new UndoRedo(myPanel, myMouse);
             }
         });
     }
