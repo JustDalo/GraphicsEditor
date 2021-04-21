@@ -35,27 +35,4 @@ public class ModuleLoader {
 
         return ShapeFactory.getServices(layer);
     }
-
-    public List<Shape> getAllShapes() {
-        Path pluginsDir = Paths.get("plugins");
-        ModuleFinder pluginsFinder = ModuleFinder.of(pluginsDir);
-
-        List<String> plugins = pluginsFinder
-                .findAll()
-                .stream()
-                .map(ModuleReference::descriptor)
-                .map(ModuleDescriptor::name)
-                .collect(Collectors.toList());
-
-        Configuration pluginsConfiguration = ModuleLayer
-                .boot()
-                .configuration()
-                .resolve(pluginsFinder, ModuleFinder.of(), plugins);
-
-        ModuleLayer layer = ModuleLayer
-                .boot()
-                .defineModulesWithOneLoader(pluginsConfiguration, ClassLoader.getSystemClassLoader());
-
-        return Shape.getServices(layer);
-    }
 }
