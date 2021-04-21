@@ -31,7 +31,7 @@ public class ToolBar extends JToolBar {
         for (int i = 0; i < factories.size(); i++) {
             ShapeFactory factory = factories.get(i);
             String className = factory.getClass().toString();
-            Button btn = new Button(className.substring(className.lastIndexOf(".") + 1, className.lastIndexOf("Factory")));
+            JButton btn = new JButton(new ImageIcon("img/" + className.substring(className.lastIndexOf(".")+1, className.lastIndexOf("Factory")) + ".jpg"));
 
             btn.setBackground(Color.white);
             btn.addActionListener(new ActionListener() {
