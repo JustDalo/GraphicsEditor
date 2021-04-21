@@ -28,10 +28,10 @@ public class ToolBar extends JToolBar {
 
         List<ShapeFactory> factories = new ModuleLoader().getAllFactories();
 
-        for (int i = 0; i <  factories.size(); i++) {
+        for (int i = 0; i < factories.size(); i++) {
             ShapeFactory factory = factories.get(i);
             String className = factory.getClass().toString();
-            Button btn = new Button(className.substring(className.lastIndexOf(".")+1, className.lastIndexOf("Factory")));
+            Button btn = new Button(className.substring(className.lastIndexOf(".") + 1, className.lastIndexOf("Factory")));
 
             btn.setBackground(Color.white);
             btn.addActionListener(new ActionListener() {
