@@ -4,20 +4,20 @@ import net.oop.gEditor.uicore.Shapes.Shape;
 import net.oop.gEditor.uicore.WorkPanel.Panel;
 
 import java.awt.*;
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 
 public class Trapeze extends Shape implements Serializable {
-    private int x1;
-    private int y1;
-    private int x2;
-    private int y2;
     private int lineWeight;
     private Color currColor;
     private Color fillColor;
 
     private int[] x;
     private int[] y;
+
+    private void readObject(ObjectInputStream text) throws IOException, ClassNotFoundException {
+        text.defaultReadObject();
+    }
 
     @Override
     public void realTimeDraw(ArrayList<Integer> points, int lineWeight, Color currColor, Color fillColor, Panel board) {
@@ -30,7 +30,6 @@ public class Trapeze extends Shape implements Serializable {
         int x2 = points.get(points.size() - 2);
         int y2 = points.get(points.size() - 1);
         int width = points.get(points.size() - 2) - points.get(points.size() - 4);
-        int height = points.get(points.size() - 1) - points.get(points.size() - 3);
         this.x = new int[4];
         this.y = new int[4];
 
@@ -54,4 +53,6 @@ public class Trapeze extends Shape implements Serializable {
         g2.setColor(currColor);
         g2.drawPolygon(x, y, x.length);
     }
+
+
 }

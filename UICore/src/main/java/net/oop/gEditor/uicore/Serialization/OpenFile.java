@@ -1,6 +1,10 @@
 package net.oop.gEditor.uicore.Serialization;
 
+//import com.fasterxml.jackson.databind.ObjectMapper;
+import net.oop.gEditor.uicore.ModuleLoader.ModuleLoader;
+import net.oop.gEditor.uicore.Shapes.Shape;
 import net.oop.gEditor.uicore.WorkPanel.Panel;
+
 
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
@@ -12,6 +16,7 @@ import java.util.ArrayList;
 
 public class OpenFile {
     public OpenFile(JMenu fileMenu, Panel panel) {
+
         Action loadAction = new AbstractAction("Open") {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,16 +46,16 @@ public class OpenFile {
                         FileInputStream fis = new FileInputStream(fileName);
                         ObjectInputStream ois = new ObjectInputStream(fis);
 
-                        panel.shapes = (ArrayList) ois.readObject();
                         panel.removedShapes.clear();
+                        panel.shapes = (ArrayList<Shape>) ois.readObject();
                         panel.repaint();
 
                         ois.close();
                         fis.close();
                     }
                 } catch (Exception ex) {
-                    System.out.println(ex.getMessage());
                     System.out.println(ex);
+
                 }
             }
         };

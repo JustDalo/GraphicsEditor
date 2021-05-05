@@ -1,5 +1,6 @@
 package net.oop.gEditor.uicore.Serialization;
 
+import net.oop.gEditor.uicore.Shapes.Shape;
 import net.oop.gEditor.uicore.WorkPanel.Panel;
 
 import javax.swing.*;
@@ -36,8 +37,10 @@ public class SaveAsFile {
                     int result = jf.showSaveDialog(null);
                     if (result == JFileChooser.APPROVE_OPTION) {
                         String fileName = jf.getSelectedFile().getAbsolutePath();
+
                         FileOutputStream out = new FileOutputStream(fileName + ".json");
                         ObjectOutputStream oos = new ObjectOutputStream(out);
+
                         oos.writeObject(panel.shapes);
                         oos.flush();
                     }

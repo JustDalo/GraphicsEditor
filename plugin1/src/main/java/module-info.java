@@ -1,5 +1,4 @@
-import net.oop.gEditor.pluginCore.Trapeze;
-import net.oop.gEditor.pluginCore.TrapezeFactory;
+import net.oop.gEditor.pluginCore.*;
 import net.oop.gEditor.uicore.ShapeFactory.ShapeFactory;
 import net.oop.gEditor.uicore.Shapes.Shape;
 

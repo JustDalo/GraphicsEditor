@@ -1,10 +1,12 @@
 package net.oop.gEditor.uicore.WorkPanel;
 
+import net.oop.gEditor.uicore.ModuleLoader.ModuleLoader;
 import net.oop.gEditor.uicore.Shapes.Shape;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Panel extends JPanel {
 
