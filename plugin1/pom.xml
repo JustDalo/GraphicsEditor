@@ -31,6 +31,13 @@
                     <outputDirectory>../UICore/target/plugins</outputDirectory>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <outputDirectory>../UICore/target/plugins</outputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
